@@ -19,5 +19,8 @@
 
 ## step 3) 通过codex生成相应的sql
 
+1. 在azure openAI 的playgound中使用codex，让自然语言转成sql 与实际使用langchain中prompt词有些变化。需要把few-shot等不用以#开头。
+2. 如果要生成多条记录，一定需要one-shot或者few-shot，不然的话，出不来。
+
 
 ## step 4) 执行insert sql插入数据库
