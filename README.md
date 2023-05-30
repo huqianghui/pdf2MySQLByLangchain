@@ -13,6 +13,9 @@
 
 ## step 2) 通过llm chatmode和few shot，生成相应的答案
 
+1. langchain的底层实现了一些常规处理，比如retry，和limitation。所以很方便也实用。
+2. 在这个例子中，发现多个few-shot是相互冲突的，每次只有最后一个few-shot生效。
+3. 目前改成用了few-shot3，来作为最终的案例。
 
 ## step 3) 通过codex生成相应的sql
 
