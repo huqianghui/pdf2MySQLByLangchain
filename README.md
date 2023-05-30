@@ -5,6 +5,11 @@
 
 ## step 1) 通过自定义语义搜索retriever，从认知搜索中获取相应的文档内容
 
+1. langchain中定义了很多retriever，包括azure cognitive search。但是这个retriever不支持语义搜索API，所以这里客户化改了一下。
+2. 在实际使用认知搜索过程中，发现如果不适用语义搜索，确实对应的scores和rank，与预期的不一致。所以还是使用语义搜索比较好。
+3. 对于中文来说，需要额外配置一下分词器等。
+4. 同时如果中文开启认知搜索，和一些其他的参数不匹配，需要删除掉。
+
 
 ## step 2) 通过llm chatmode和few shot，生成相应的答案
 
