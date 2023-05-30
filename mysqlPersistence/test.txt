@@ -1,0 +1,1 @@
+test_sql= "insert into POFD_BS_SHARENUMLIMITED(QUOTA_ITEM,INVEST_CHANNEL,QUOTA_CONTAIN_ID,QUOTA_NUM,UNIT) values('首次申购最低金额','直销柜台','含',100000,'元'),('追加申购最低金额','直销柜台','含',10000,'元'),('申购最低金额','其他销售机构','含',1,'元'),('追加申购最低金额','其他销售机构','含',1,'元'),('赎回最低份额','','',1,'份'),('最低保留余额','','',1,'份')"

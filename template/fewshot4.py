@@ -2,36 +2,23 @@ from langchain.prompts import (
     AIMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
+few_shot_human4 = HumanMessagePromptTemplate.from_template("1、投资人申购、赎回的基金份额需为最小申购、赎回单位的整数倍。最小申购、赎回单位为1万份。")
 
-few_shot_human4 = '''
-投资人可将其全部或部分基金份额赎回。每类基金份额单笔赎回或转换不得少于1份\n(如该账户在该销售机构托管的该类基金份额余额不足1份,则必须一次性赎回或转出该类\n基金份额全部份额);若某笔赎回将导致投资人在该销售机构托管的该类基金份额余额不足1份时,基金管理人有权将投资人在该销售机构托管的该类基金份额剩余份额一次性全部赎回。
+
+result1='''
+{{
+	"限额项目": "最小申购赎回单位",
+	"销售方式": "",
+	"是否含申购费": "",
+	"金额数": "1万",
+	"单位": "份"
+}}
 '''
-few_shot_human_template4 = HumanMessagePromptTemplate.from_template(few_shot_human4)
 
-
-few_shot_ai4 = '''
+few_shot_ai_template4 = f'''
 [
-			{
-				"限额项目": "赎回最低额",
-				"销售方式": "",
-				"是否含申购费": "",
-				"金额数": "1",
-				"单位": "份"
-			},
-			{
-				"限额项目": "转换最低额",
-				"销售方式": "",
-				"是否含申购费": "",
-				"金额数": "1",
-				"单位": "份"
-			},
-			{
-				"限额项目": "账户持有份额下限",
-				"销售方式": "",
-				"是否含申购费": "",
-				"金额数": "1",
-				"单位": "份"
-			}
-		]
+	{result1}
+]
 '''
-few_shot_ai_template4 = AIMessagePromptTemplate.from_template(few_shot_ai4)
+
+few_shot_ai4 = AIMessagePromptTemplate.from_template(few_shot_ai_template4)
