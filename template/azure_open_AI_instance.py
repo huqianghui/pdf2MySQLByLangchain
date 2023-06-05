@@ -8,7 +8,7 @@ from langchain.chat_models import AzureChatOpenAI
 os.environ["OPENAI_API_TYPE"] = "azure"
 os.environ["OPENAI_API_BASE"] = "https://openai-test-fc.openai.azure.com/"
 os.environ["OPENAI_API_VERSION"] = "2023-03-15-preview"
-os.environ["OPENAI_API_KEY"] = "2cadf4ed0527418788a56ec5b496fa92"
+os.environ["OPENAI_API_KEY"] = "XXXX"
 
 chat = AzureChatOpenAI(
     deployment_name="gpt-35-turbo",
