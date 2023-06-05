@@ -2,7 +2,7 @@ import os
 import openai
 
 openai.api_type = "azure"
-openai.api_key = "a65f52d60c744eb9b141d9939cd4c4b6"
+openai.api_key = "XXXXX"
 openai.api_base = "https://openaidemo-hu.openai.azure.com/"
 openai.api_version = "2022-12-01"
 
