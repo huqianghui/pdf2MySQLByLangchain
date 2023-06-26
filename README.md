@@ -5,6 +5,8 @@
 
 视频讲解B站链接地址：https://www.bilibili.com/video/BV1pj411S7RC/
 
+youtube视频链接地址： https://youtu.be/f4HHK-jt_V0
+
 ## step 1) 通过自定义语义搜索retriever，从认知搜索中获取相应的文档内容
 
 1. langchain中定义了很多retriever，包括azure cognitive search。但是这个retriever不支持语义搜索API，所以这里客户化改了一下。
