@@ -3,6 +3,8 @@
 1. 在调用这个程序之前，通过表单认知服务，实现pdf的切割与文字识别等
 2. 把合适的大小快和位置关系，保存到认知服务中。
 
+视频讲解B站链接地址：https://www.bilibili.com/video/BV1pj411S7RC/
+
 ## step 1) 通过自定义语义搜索retriever，从认知搜索中获取相应的文档内容
 
 1. langchain中定义了很多retriever，包括azure cognitive search。但是这个retriever不支持语义搜索API，所以这里客户化改了一下。
